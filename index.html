@@ -104,43 +104,43 @@ function rotation()
 	//draw second
 	ctx.beginPath();
 	ctx.arc(400, 225, 10, 2*fract_second*Math.PI, 2*fract_second*Math.PI-3);
-	ctx.lineWidth = 3;
+	ctx.lineWidth = 5;
 	ctx.strokeStyle = "white";
 	ctx.stroke();
 
 	//draw minute circle
 	ctx.beginPath();
 	ctx.arc(400, 225, 200, 1.5*Math.PI, rad_minute-1.57);
-	ctx.lineWidth = 10;
-	ctx.strokeStyle = "blue";
+	ctx.lineWidth = 15;
+	ctx.strokeStyle = "coral";
 	ctx.stroke();
 
 	//draw hour circle
 	ctx.beginPath();
 	ctx.arc(400, 225, 160, 1.5*Math.PI, rad_hour-1.57);
 	ctx.lineWidth = 5;
-	ctx.strokeStyle = "grey";
+	ctx.strokeStyle = "lightslategray";
 	ctx.stroke();
 
 	//draw day circle
 	ctx.beginPath();
 	ctx.arc(400, 225, 100, 1.5*Math.PI, rad_day-1.57);
 	ctx.lineWidth = 12;
-	ctx.strokeStyle = "lightgreen";
+	ctx.strokeStyle = "springgreen";
 	ctx.stroke();
 
 	//draw month circle
 	ctx.beginPath();
 	ctx.arc(400, 225, 60, 1.5*Math.PI, rad_month-1.57);
-	ctx.lineWidth = 8;
+	ctx.lineWidth = 4;
 	ctx.strokeStyle = "silver";
 	ctx.stroke();
 
 	//draw year circle
 	ctx.beginPath();
 	ctx.arc(400, 225, 35, 1.5*Math.PI, rad_year-1.57);
-	ctx.lineWidth = 4;
-	ctx.strokeStyle = "red";
+	ctx.lineWidth = 8;
+	ctx.strokeStyle = "steelblue";
 	ctx.stroke();
 
 //--------------------------------------------------------------------------------------
