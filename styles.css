@@ -1,0 +1,8 @@
+body{
+	background-color: black;
+	color: white;
+	font-family: "Arial" "Times New Roman";
+}
+canvas{
+    width: 100%;
+}
