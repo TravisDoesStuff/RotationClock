@@ -1,7 +1,7 @@
 const centerX = 200;
 const centerY = 90;
 const ringWidth = 10;
-const strokeStyle = "white";
+let strokeStyle = "white";
 
 rotation = () => {
 	var date = new Date();
@@ -101,3 +101,17 @@ maxMonth = () => {
 setInterval( function(){
     rotation()
 }, 42);
+
+
+// Invert colors
+document.body.onkeyup = function(e) {
+	if(e.keyCode == 32) {
+		if(strokeStyle == "white"){
+			strokeStyle = "black"
+			document.body.style.background = "white";
+		} else {
+			strokeStyle = "white"
+			document.body.style.background = "black";
+		}
+	}
+}
